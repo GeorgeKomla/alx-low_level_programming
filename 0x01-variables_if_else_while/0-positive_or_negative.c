@@ -6,7 +6,7 @@
  * main -Entry point
  * Author: GeorgeKomla
  * Date: 19-10-2022
- * Details: c program to print positive, zero and negative results of a random number
+ * Details: c program to print po+ve, 0 and ne-ive results of a random num
  * Return: 0 (success)
 **/
 
