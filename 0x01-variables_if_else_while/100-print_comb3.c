@@ -2,27 +2,34 @@
 
 /**
  * main - program to display 0-9 comma separated
- *
+ * Description: Print all possible combinations of two digits.
  * Return: 0 means success
 **/
 int main(void)
+
 {
-	int a;
-	int b;
-	
-	for (a = 77; a <=89; a++)
+	int d, e, f;
+
+	d = 0;
+
+	while (d < 100)
 	{
-		for (b = a+1; b < 90; b++)
-                {
-			if ( a != 88 || b != 89);
-			putchar(a);
-			putchar(b);
+		e = d % 10; /* singles digit */
+		f = d / 10; /* doubles digit */
+		
+		if (f < e)
+		{
+			putchar(f + '0');
+			putchar(e + '0');
+			
+			if (d < 89)
 			{
 				putchar(',');
-				putchar(' 'i);
-                        }
-										                }
-        }
+				putchar(' ');
+			}
+		}
+		d++;
+	}
 	putchar('\n');
-        return (0);
+	return (0);
 }
