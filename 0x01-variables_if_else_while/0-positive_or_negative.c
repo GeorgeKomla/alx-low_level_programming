@@ -1,22 +1,14 @@
 #include <stdio.h>
-
 #include <stdlib.h>
-
 #include <time.h>
 
 /**
- *
- ** main -Entry point
- *
- ** Author: GeorgeKomla
- *
- ** Date: 19-10-2022
- *
- ** Details: c program to print positive, zero and negative results of a random number
- *
- ** Return: 0 (success)
- *
- **/
+ * main -Entry point
+ * Author: GeorgeKomla
+ * Date: 19-10-2022
+ * Details: c program to print positive, zero and negative results of a random number
+ * Return: 0 (success)
+**/
 
 int main(void)
 
@@ -27,16 +19,10 @@ int main(void)
 	n = rand() - RAND_MAX / 2;
 
 	if (n > 0)
-	
-	printf("%d is positive\n", n);
-
+		printf("%d is positive\n", n);
 	else if (n == 0)
-
-	printf("%d is zero\n", n);
-
+		printf("%d is zero\n", n);
 	else if (n < 0)
-
-	printf("%d is negative\n", n);
-	
+		printf("%d is negative\n", n);
 	return (0);
 }
